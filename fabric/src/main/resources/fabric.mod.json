@@ -1,27 +1,27 @@
 {
     "schemaVersion": 1,
-    "id": "{{ mod_id }}",
+    "id": "honk",
     "version": "${version}",
-    "name": "{{ name }}",
-    "description": "{{ description }}",
+    "name": "Honk",
+    "description": "Meet the Honk - a mysterious prehistoric creature extinct for years...until now.",
     "authors": [
-        "{{ author }}"
+        "Jamalam"
     ],
     "contact": {
-        "homepage": "https://github.com/{{github_owner}}/{{github_repo}}",
-        "sources": "https://github.com/{{github_owner}}/{{github_repo}}",
-        "issues": "https://github.com/{{github_owner}}/{{github_repo}}/issues"
+        "homepage": "https://github.com/JamCoreModding/honk",
+        "sources": "https://github.com/JamCoreModding/honk",
+        "issues": "https://github.com/JamCoreModding/honk/issues"
     },
     "license": "MIT",
-    "icon": "assets/{{mod_id}}/icon.png",
+    "icon": "assets/honk/icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "{{group}}.{{mod_id}}.fabric.{{main_class}}Fabric"
+            "io.github.jamalam360.honk.fabric.HonkModFabric"
         ]
     },
     "mixins": [
-        "{{mod_id}}.mixins.json"
+        "honk.mixins.json"
     ],
     "depends": {
         "fabric": ">=${fabric_api_version}",
